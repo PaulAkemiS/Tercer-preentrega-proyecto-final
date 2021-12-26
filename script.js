@@ -3,7 +3,7 @@ let lista = []
 //Traemos los productos del json
 $.getJSON('productos.json', function (data) {
 
-    console.log(sumarIVA(data[0].precio))
+
     data.forEach(elemento => lista.push(elemento))
 
     mostrarCarrito()
